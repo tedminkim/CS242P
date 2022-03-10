@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+      {% endblock %}
+    </title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark nav-black">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{url_for('lucene')}}">Search</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="{{url_for('hadoop')}}">Search with Hadoop</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="{{url_for('lucene_results')}}">Lucene Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('hadoop_results')}}">Hadoop Results</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    <div class="below-title">
+        <img src="/static/shrimp.jpg" alt="Tech Prawn">
+        <p class="margin-below" class="red">Hadoop results for query: "best uc university"</p>
+    </div>
+    <div class="query-results">
+        <div class="red">Rank Score Subreddit Title</div><br>
+        <div class="red">1 6.722471 ucd UC Davis ranked 4th best public university in Forbes America’s Top Colleges</div><br>
+        <div class="comments">
+            Comments:<br>
+            I knew this already but California is fucking stacked when it comes to public schools.<br>
+            9 UCs + 23 CSUs = 32 public universities. However, we do have a total of 58 counties in the state. I think we can build a few more UCs and CSUs here and there.<br>
+            If you haven't read the article it's important to know the metrics for this list are based on return (future salary) on your investment (tuition price). Basically showing a pricier school won't necessarily lead to a better paying career long run.<br>
+            Also, the list takes into account student loan debt per borrower and how long it takes to pay off that debt. Graduation and retention rates. The number of graduates of each college who have gone on to win Fulbright, Truman, Goldwater, Rhodes, Gates and Cambridge scholarships over the last four years. The number of undergraduates who went on to earn Ph.D's in the last three years. Finally, the number of leaders and entrepreneurs (rich and powerful) they have produced.<br>
+            Yes, I definitely over simplified the article.<br>
+            “Berkeley’s faculty has had a hand in the discovery of Vitamins E and K, the development of the atomic bomb and the creation of the flu vaccine.” I like how they have 2 really helpful things that progressed humanity and in between something that is capable of wiping out an entire city lol.<br>
+            If you play with the filters, we’re the #1 public suburban school! 🤣<br>
+            i can say this cus i go here but how are we ranked higher than Brown, John Hopkins, and CalTech LOLL<br>
+            Forbes's list is based on bang for your buck. Basically, it's return on investment<br>
+            I think this list is based off purely research grants or whatever, UC Davis gets a ton of money for research. Nevermind they're taking into account the students socioeconomic status which is a reason the UCs are ranked so high.<br>
+            Cuz the people that made this are on crack<br>
+            Cuz those aren’t public schools? They’re private?<br>
+            no check the list for both public and private. uc davis ranks above those schools<br>
+            Oh shit. That’s interesting… I’m a part of the problem then I just read the title 🤡<br>
+            What's your argument that they should be ranked higher?<br>
+            im really just going based off name brand. its well known that the schools i listed above are really prestigious and hard to get in to. dont get me wrong davis is a prestigious school as well but id be hard pressed to say that it can competeagainst ivy league level colleges in most areas.<br>
+            How does being prestigious and harder to get into affect learning outcomes? Edit: To be clear, I'm not super sold on trying to argue that Davis is better than these schools, just that I feel a lot of the public opinion on "top" schools isn't really based on quantifiable factors, or conflates different factors together.<br>
+            because better professors and very intelligent students would attend that school. (not saying davis people aren't intelligent because we are). ofc there's the issue with feeder schools and people who pay their way in but they probably make up like 1% of the student population so I think it's insignificant.<br>
+            but like i said i go to davis so im thrilled we ranked so high against these other schools. just a little confused on why<br>
+            I'm a little confused as to why you're a little confused. It's been well known for decades that the University of California is an elite system that has the prestige and academic rigor of any Ivy league college. It is why the entire system is referred to as the Public Ivies. Some of the best professors in the world teach at UC Davis, and students at Ivy leagues are no smarter than students at other schools.<br>
+            I was wondering the same thing lmao<br>
+            berkeley over stanford heh had a giggle<br>
+            The only real argument against it being ranked so high is how many ucd students in this thread obviously can't read. Different metrics=different rankings Ask yourself what makes a school "good" and compare that to the metrics us news uses and what Forbes is using here. Consider that your entire basis for comparing school quality might be "traditionally people consider school X better than Y therefore it is." and question if that seems right.<br>
+            Aggie Pride :MOO:<br>
+            That list is broken lmao, Berkeley over Stanford and MIT??<br>
+            Methodology might factor in social mobility outcomes and price. US News has dominated the conversation for years over which schools people think are generally good, even though it's used some pretty questionable metrics in the past (admission rate, alumni giving, polls, etc)<br>
+            dont forget white student percentage<br>
+            It's a bang-for-the-buck ranking. Stanford and MIT are much more expensive to attend.<br>
+            They also are more generous with their grants though<br>
+            Thou shall not question the list.<br>
+            🐮 🏆<br>
+            Go Aggies!<br>
+            I fucking love my alma mater.<br>
+            lit<br>
+        </div>
+        <br>
+        <div class="red">2 5.2397175 ucm UC Merced ranked #44 Public University by US News</div><br>
+        <div class="comments">
+            Comments:<br>
+            Merced was ranked #87 public university just three years ago. Merced has improved by #43 places. That is incredible. Merced is moving on up. Top 50 now.<br>
+            Just wait until they rank the food.<br>
+            Riverside beat us? Dafuq!<br>
+            Merced was ranked #87 public university just three years ago. Riverside was #58. Merced has improved by 43 places. In no time it will beat Riverside.<br>
+        </div>
+        <br>
+        <div class="red">3 4.833896 ucd UC Davis ranked #5 public university in U.S., #3 in UC system by the Wall Street Journal</div><br>
+        <div class="comments">
+            Comments:<br>
+            A surprise, to be sure, but a welcome one<br>
+            "Hello there" --UCD to the UC's that it has the high ground over<br>
+            It's awesome, but I'm not sure why everyone's so surprised when it's the exact same order as last year.<br>
+            Berkeley kids thinking about ending it all rn<br>
+            I was surprised to learn that UC Davis was Berkeley's University Farm campus for its first 50 years<br>
+            Yup. We are around because of them lol<br>
+            It is the original University of California<br>
+            I like to joke that apparently even in 1905 the Bay Area was so crowded they needed to put the ag school way the hell (in 1905 Berkeley to Davis was basically an all day trip) out here.<br>
+            (in 1905 Berkeley to Davis was basically an all day trip) No it wasn't, it was about 2.5 hours by train from Oakland on SP, which ran twice daily (three trains, but one didn't stop in Davis). Part of the reason Davis won out as the location of the university farm was relative ease of access.<br>
+            Why did the hell did I not look up the train, only the number one way of getting around those days lmao<br>
+            Wow, good point!<br>
+            Nice to see yall are actually happy with your ranking, unlike UC🅱️...<br>
+            I’m sorry you should really call it UC Berkeley or Cal. UCB is just not ok, we are mere mortals compared to them.<br>
+            Many would agree with you but this guy didn’t... https://www.reddit.com/r/UCDavis/comments/hcqp6g/psa_to_uc_davis_students_from_the_berkeley/?utm_source=share&utm_medium=ios_app&utm_name=iossmf<br>
+            How goated is the UC system that half the top ten is just UCs<br>
+            what happened to UCB? they fell down hard in rank<br>
+            Maybe you're thinking of a different ranking. They're ranked the same as last year by WSJ.<br>
+            Well there was that fed report that just came out that UCB had over 40 instances of admitting students who didn't deserve it because their parents had money out of a total of 60 across the UC system (Davis had 0)<br>
+            UCSD cant grasp the fact that they're behind us xD<br>
+            It’s so dumb, we’re neck in neck in most rankings and it’s not like the minute differences in these rankings even matter<br>
+            Same with the UCSB subreddit. They are all like how is Davis higher. And like “we all picked sb over Davis and sd for a reason”<br>
+            Santa Barbara is nice, great place to live. Like LA without many of the LA problems<br>
+            😎<br>
+            Yeah i'm thinking we're back.<br>
+            Can someone provide article without paywall? Thanks<br>
+            I wonder how they measure this shit.<br>
+            https://www.timeshighereducation.com/USmethodology2020<br>
+            Anyone know where to find a source without a paywall?<br>
+            Who was #1 for the public university ranking?<br>
+            I'm 99% sure it's UCLA.<br>
+            UCLA is #2. #1 is Michigan, and rightly so.<br>
+            Mb, I'm illiterate<br>
+            What is this ranking based on?<br>
+            Pretty sure we went down Nationally. In 2020 we were 36.<br>
+            pogchamp<br>
+            Oh really? Maybe I might apply for it.<br>
+        </div>
+        <br>
+        <div class="red">4.695183 ucr US News ranks UC Riverside the #33 public university in the nation</div><br>
+        <div class="comments">
+            Comments:<br>
+            damn Merced isn’t even last anymore<br>
+            they grow up so fast<br>
+            As a SC alum, shameful. UCSC hasn’t done jack shit for the past +15 years. Each year they keep dropping in the ranks, and out out top100.<br>
+            WE'RE NUMBER 33! WE'RE NUMBER 33! publiconly<br>
+            what is going on at Santa Cruz that Merced is beating them?<br>
+            We stan Merced.<br>
+            Our aweful old Vice Chancellor Cynthia became their chancellor and is completely inept.<br>
+            Cool But i'm still in debt<br>
+            Have you thought about eating less avocado toast?<br>
+            US News ranks your debt category #33 in the nation.<br>
+            Here's also the most recent admit data that I posted a few days ago. It's interesting how it compares with the rankings. Source: https://admission.universityofcalifornia.edu/campuses-majors/freshman-admit-data.html<br>
+            I got in back when UCR had a momentary 49-50.5% admit rate. We'll likely get back to that once we're done expanding.<br>
+            Holy fuck US News did UCSC fuckin dirty.<br>
+            UCB students are crying rn that they’re not number one<br>
+            The social mobility one really is the best one IMO. It helped me out so much going to UCR.<br>
+            Same. Maybe next year.<br>
+            PSA to UCR students from the Berkeley community Recently a meme was shared to our subeddit outlining a dismissive and disrespectful act that, often, many non-Berkeley students are guilty of. Please do not refer to Berkeley as "UCB." This is not the proper way to refer to the University of California's original and flagship campus. Cal, Berkeley or UC Berkeley are all proper and acceptable ways to say it. UCB, on the other hand, is not. As the system's most prestigious and respected campus, we feel that it is important to honor and maintain an appropriate level of respect for our university's name. We feel that "UCB" cheapens our brand and doesn't emphasize the incredible prestige associated with Berkeley. While it may be acceptable to refer to all other UC campuses in initialisms due to their lack of recognition and prestige, this is not acceptable for the flagship and most well-known campus, and we therefore request that you cease using the name "UCB" to refer our school. Thank you. TL:DR Don't say "UCB" when referring to Berkeley.
+            you forgot the /s<br>
+            It's such a iconic copy pasta I don't think it needs one. Edit: it needed one.<br>
+            lmao some people prob dont know the history of this comment. especially freshmen lol<br>
+        </div>
+        <br>
+        <div class="red">4 4.583022 ucm US News ranks UCM #40 in the best public university rankings</div><br> 
+        <div class="comments">
+            Comments:<br>
+            hey, thats pretty good<br>
+            Bruh, we really tied with UCSC? That's kinda nutty<br>
+            That's pretty solid for a small, young campus.<br>
+            Ayyyeee<br>
+        </div>
+        <br>
+        6 4.535365 ucsb US News ranks UC Santa Barbara the #5 public university in the nation<br>
+        7 4.2230024 ucb UC Berkeley tops U.S. public, fourth-best overall in QS World rankings<br>
+        8 3.948391 ucm UC campuses earn top spots in U.S. News & World Report’s 2022 Best Colleges rankings<br>
+        9 3.8320756 ucr Zoom university<br>
+        10 3.8320756 ucla Zoom University<br>
+        11 3.597488 ElectricalEngineering List of best Electrical Engineering books suggested by top professors from MIT, Stanford, UC Berkeley and more<br>
+        12 3.4628298 matheducation Training university math instructors<br>
+        13 3.4628298 ucm University of California Subreddit<br>
+        14 3.3631535 ucr UC Backup<br>
+        15 3.3631535 ucsd UC Backup<br>
+        16 3.3631535 ucm UC Merced<br>
+        17 3.3631535 ucm UC Application<br>
+        18 3.303665 google Google showing harvard University age!<br>
+        19 3.303665 mac My first day of university<br>
+        20 3.303665 ucm Reactions - University of California, Merced<br>
+        21 3.303665 MechanicalKeyboards Finished my build for university<br>
+        22 3.192921 ucsc The UC Hall?<br>
+        23 3.192921 ucsc UC Sexy Calves<br>
+        24 3.192921 ucr UC Data Breach<br>
+        25 3.192921 ucm Visiting UC Merced<br>
+        26 3.192921 ucm UC Merced Economics<br>
+        27 3.192921 ucm UC Merced Parking<br>
+        28 3.192921 ucm UC Wide Research<br>
+        29 3.192921 ucm UC Minecraft Server<br>
+        30 3.192921 ucm Why UC Merced?<br>
+        31 3.192921 ucm UC Merced Classifieds<br>
+        32 3.192921 ucm UC Merced Classified<br>
+        33 3.192921 ucd UC Davis problems<br>
+        34 3.1584885 ElectricalEngineering First ever PCB for university project<br>
+        35 3.1584885 learnprogramming All the MOOC of Helsinki University...<br>
+        36 3.1113687 ElectricalEngineering Best Christmas<br>
+        37 3.0390913 ucm New UC Merced Subreddit<br>
+        38 3.0390913 ucm Uc Merced Vs Locals<br>
+        39 3.0390913 ucm UC Merced Reddit Meetup?<br>
+        40 3.0390913 ucm Prospective UC Merced Student<br>
+        41 3.0390913 ucm UC Merced Pokemon Go<br>
+        42 3.0390913 ucm UC Financial Aid Survey<br>
+        43 3.0390913 ucm Life at UC Merced<br>
+        44 3.0390913 ucm UC Merced Psychology Program<br>
+        45 3.0390913 ucm UC Merced or SFSU?<br>
+        46 3.0390913 ucsb Love UC Santing Barbara<br>
+        47 3.0390913 ucb Love you UC Berkeley<br>
+        48 3.0390913 ucb Campanile at UC Berkeley<br>
+        49 3.0293727 ucb Side-by-side comparison of UC Berkeley with UC Blockeley (Minecraft version)<br>
+        50 3.0255344 ElectricalEngineering I feel like I'm lost in university<br>
+        51 3.0255344 datascience Practical Data Science by Carnegie Mellon University<br>
+        52 3.0255344 learnprogramming A Programmer’s Regret: Neglecting Math at University<br>
+        53 2.973646 ucb Hot take: UC Berkeley best ~aesthetically beautiful~ campus in the United States? From the city to the hills I really think our campus is one of the best in the country. Even better than UCLA. Thoughts?<br>
+        54 2.9538808 ucsc Best starter Pokémon<br>
+        55 2.9538808 google Best assistant ever<br>
+        56 2.9538808 ucsd Trying my best<br>
+        57 2.9538808 productivity Best atomic habits<br>
+        58 2.9538808 webdev Best resume ever.<br>
+        59 2.9538808 ucla Best quarter ever<br>
+        60 2.9538808 ucm best subreddit ever<br>
+        61 2.9538808 computerscience Best crossover ever<br>
+        62 2.9538808 MechanicalKeyboards He’s the best<br>
+        63 2.9538808 ucb best feeling ever<br>
+        64 2.9033215 datascience A Warning on University of Michigan Coursera Courses<br>
+        65 2.9033215 matheducation How much in speaking fees for university visits?<br>
+        66 2.9033215 apple Apple CEO becomes chairman of China university board<br>
+        67 2.9033215 ucb #1 Public University... Go Bears and stay safe!<br>
+        68 2.899403 ucm USNWR UC Social Mobility Rankings:<br>
+        69 2.899403 ucm Does UC Merced Play Paintball?<br>
+        70 2.899403 ucm Easiest Class at UC Merced<br>
+        71 2.899403 ucm Computer Science at UC Merced<br>
+        72 2.899403 ucm UC Elder Scrolls Online Discord<br>
+        73 2.899403 ucm Dropping out of UC merced<br>
+        74 2.899403 ucm UC Merced Tour Guide/Admissions<br>
+        75 2.899403 ucm UC Merced community / neighborhood garden<br>
+        76 2.899403 ucm UC Merced Chemistry - Materials Emphasis<br>
+        77 2.899403 ucm Transferring out of Uc Merced<br>
+        78 2.899403 ucm Shared Experience at UC Merced<br>
+        79 2.899403 uci UC Zoom until further notice<br>
+        80 2.899403 ucd The crows of UC Davis<br>
+        81 2.899403 ucd UC Davis Mentioned on Jeopardy!<br>
+        82 2.8115678 datascience Best Data Science Blogs?<br>
+        83 2.8115678 programming 11 Best Programming Fonts<br>
+        84 2.8115678 ucr UCR. Is. The. Best.<br>
+        85 2.8115678 matheducation Line of best fit<br>
+        86 2.8115678 productmanagement Best practices for Storytelling<br>
+        87 2.8115678 uci UCI’s Best Couple ♥️<br>
+        88 2.8115678 MechanicalKeyboards Best macro pad ever<br>
+        89 2.8115678 pcmasterrace Best we can do<br>
+        90 2.8115678 pcmasterrace Still the best platform!<br>
+        91 2.8025765 datascience The best podcast I’ve ever heard on best paths into data science<br>
+        92 2.7905982 ucr The University Needs to Offer More Classes / More Spots<br>
+        93 2.7905982 ucla Sorry, no. 2 public university. UCB back on top.<br>
+        94 2.7905982 ucm Studying a year abroad at the University of California<br>
+        95 2.7905982 uci A guy today at University Center near Tender Greens....<br>
+        96 2.7905982 computerscience Professor at my university gave away signed 1st edition<br>
+        97 2.7905982 learnprogramming Stanford University now offering a free course on Python<br>
+        98 2.7905982 ucb The absolute joke that is this year's University Medal<br>
+        99 2.7719917 ucsc "You go to UC Santa Cruz?"<br>
+        100 2.7719917 ucm UC Acceptance Rates - Class of 2025"
+    </div>
+    <br>
+    {% block content %}
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <p class="red">Click search above to search again.</p>
+  </body>
+</html>
