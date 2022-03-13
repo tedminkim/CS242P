@@ -6,6 +6,9 @@ from flask_session import Session
 from forms import SearchForm
 import sys
 import string
+import pymongo
+from flask_pymongo import PyMongo #for MongoDB
+from pymongo import MongoClient
 
 app = Flask(__name__)
 porter = PorterStemmer()
@@ -85,7 +88,10 @@ def hadoop_output1():
 
 if __name__ == "__main__":
     app.secret_key = 'ooga booga'
-    app.config['SESSION_TYPE'] = 'filesystem'
+    #app.config['SESSION_TYPE'] = 'filesystem'
+    
+    client = pymongo.MongoClient("mongodb+srv://ucrawl:ucrawl..@cluster0.fbijl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    db = client.test
 
     #sess.init_app(app)
 
